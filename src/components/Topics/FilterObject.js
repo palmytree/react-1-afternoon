@@ -77,7 +77,7 @@ class FilterObject extends Component {
 				<span className='puzzleText'>
 					Unfiltered:
 					{this.state.unFilteredArray.map((e, i) => {
-						let output = [];
+						let output = []; 
 						for (let key in e) {
 							output = [
 								...output,
@@ -99,12 +99,12 @@ class FilterObject extends Component {
 				<button className='confirmationButton' onClick={() => this.solve()}>
 					Filter
 				</button>
-				<span className='resultsBox filterObjectRB'>
+				<span className='resultsBox filterObjectRB scroll'>
 					Filtered: {this.state.filteredArray}
 				</span>
 			</div>
 		);
-	}
+	} 
 }
 
 export default FilterObject;
