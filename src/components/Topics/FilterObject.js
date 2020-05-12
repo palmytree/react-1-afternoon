@@ -99,7 +99,7 @@ class FilterObject extends Component {
 				<button className='confirmationButton' onClick={() => this.solve()}>
 					Filter
 				</button>
-				<span className='resultsBox filterObjectRB scroll'>
+				<span className='resultsBox filterObjectRB'>
 					Filtered: {this.state.filteredArray}
 				</span>
 			</div>
